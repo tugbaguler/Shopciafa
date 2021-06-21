@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main2_shopciafa"
+            android:icon="@mipmap/shopciafa_icon"
+            android:title="Shopciafa" />
+        <item
+            android:id="@+id/main2_my_orders"
+            android:icon="@mipmap/checklist"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/main2_my_card"
+            android:icon="@mipmap/card"
+            android:title="My Card" />
+        <item
+            android:id="@+id/main2_my_wishlist"
+            android:icon="@mipmap/wishlist"
+            android:title="My Wishlist" />
+        <item
+            android:id="@+id/main2_my_account"
+            android:icon="@mipmap/user"
+            android:title="My Account" />
+    </group>
+
+    <item
+        android:id="@+id/main2_sign_out"
+        android:icon="@mipmap/logout"
+        android:title="Sign Out"
+    />
+
+</menu>
+
+
+

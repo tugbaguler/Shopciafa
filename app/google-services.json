@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162207860352",
+    "firebase_url": "https://shopciafa.firebaseio.com",
+    "project_id": "shopciafa",
+    "storage_bucket": "shopciafa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162207860352:android:2eb2bc6143691f889c0865",
+        "android_client_info": {
+          "package_name": "com.example.shopciafa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162207860352-t0cfu5ktdkar1fj7vohnt17sjfeuiau0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPJf3eWIey2X2Hku56ET9QBNz3oWX2BK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162207860352-t0cfu5ktdkar1fj7vohnt17sjfeuiau0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

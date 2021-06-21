@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".AgeGenderPredictionActivity">
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_open_camera"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="50"
+                android:background="@color/colorAccent"
+                android:text="Open Camera"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btn_upload_image_from_gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:text="Upload ımage"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/users_profile_picture"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@mipmap/picture_big"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_process"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary"
+            android:text="Process"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/show_the_prediction_gender_result_textView"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/show_the_prediction_result_textView"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/show_the_prediction_result_age_textView"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/show_the_prediction_result_textView"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btn_list_products_by_age_and_gender"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary"
+            android:text="List Products by Age and Gender"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout_myorders"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slider_background">
+
+    <ImageView
+        android:id="@+id/product_image_in_my_orders"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/deal_product_1" />
+
+    <ImageView
+        android:id="@+id/order_status_indicator_dot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_title_in_my_orders"
+        app:srcCompat="@drawable/default_dot"
+        app:tint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/rate_star_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_image_in_my_orders">
+
+        <ImageView
+            android:id="@+id/imageView_your_rating_star1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star"
+            app:tint="#CCCCCC" />
+
+        <ImageView
+            android:id="@+id/imageView_your_rating_star2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star"
+            app:tint="#CCCCCC" />
+
+        <ImageView
+            android:id="@+id/imageView_your_rating_star3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star"
+            app:tint="#CCCCCC" />
+
+        <ImageView
+            android:id="@+id/imageView_your_rating_star4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star"
+            app:tint="#CCCCCC" />
+
+        <ImageView
+            android:id="@+id/imageView_your_rating_star5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star"
+            app:tint="#CCCCCC" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_delivery_date_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Delivered on Wed, 26th April 2020"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/order_status_indicator_dot"
+        app:layout_constraintStart_toEndOf="@+id/order_status_indicator_dot"
+        app:layout_constraintTop_toTopOf="@+id/order_status_indicator_dot" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Your ratings"
+        android:textColor="#AAAAAA"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_delivery_date_information" />
+
+    <TextView
+        android:id="@+id/product_title_in_my_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="US Polo Assn Sneakers"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_star_container" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

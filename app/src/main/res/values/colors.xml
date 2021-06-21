@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38A2A2</color>
+    <color name="colorPrimaryDark">#38A2A2</color>
+    <color name="colorAccent">#FDFDFD</color>
+    <color name="btn_defoult">#FDFDFD</color>
+    <color name="colorSweetPink">#fe6d73</color>
+    <color name="colorGreen">#0bc15c</color>
+    <color name="colorLightGrey">#CCCCCC</color>
+    <color name="colorDarkGrey">#AAAAAA</color>
+</resources>

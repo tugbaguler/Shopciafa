@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_grid_listing_of_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:paddingBottom="35dp"
+    android:background="@drawable/slider_background"
+    android:elevation="3dp">
+
+    <Button
+        android:id="@+id/btn_grid_listing_view_all"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="View All"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/girid_listing_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="New Season"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_grid_listing_view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_grid_listing_view_all"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/grid_layout" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_layout"
+        app:layout_constraintEnd_toEndOf="@+id/grid_layout"
+        app:layout_constraintStart_toStartOf="@+id/grid_layout"
+        app:layout_constraintTop_toTopOf="@+id/grid_layout" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/slider_background"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_grid_listing_view_all">
+
+        <include
+            layout="@layout/horizontal_scroll_items"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0" />
+
+        <include
+            layout="@layout/horizontal_scroll_items"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/horizontal_scroll_items"
+            app:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/horizontal_scroll_items"
+            app:layout_columnWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProductDescriptionFragment">
+
+    <TextView
+        android:id="@+id/product_description_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#333333"
+        android:text="15 gün içinde ücretsiz iade.
+Bu ürün TUĞBA GÜLER tarafından gönderilecektir.
+Ürün Adı :U.S. Polo Assn. Sneaker
+Bu üründen en fazla 10 adet sipariş verilebilir. 10 adetin üzerindeki siparişleri Shopciafa iptal etme hakkını saklı tutar.
+Kampanya fiyatından satılmak üzere 50 adetten fazla stok sunulmuştur.
+İncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir." />
+</FrameLayout>

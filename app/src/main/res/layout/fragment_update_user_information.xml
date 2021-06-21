@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUserInformationFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_user_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="150dp"
+        app:civ_border_color="#333333"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/user_dark2" />
+
+    <Button
+        android:id="@+id/btn_change_user_profile_photo"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Change Photo"
+        android:textColor="#333333"
+        android:textAllCaps="false"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintEnd_toEndOf="@+id/circle_user_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/circle_user_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/circle_user_profile_image" />
+
+    <Button
+        android:id="@+id/btn_remove_user_profile_photo"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"
+        android:text="Remove"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/circle_user_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/circle_user_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/btn_change_user_profile_photo" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_remove_user_profile_photo" />
+
+    <Button
+        android:id="@+id/btn_update_user_information"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Update"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_remove_user_profile_photo"
+        app:layout_constraintStart_toStartOf="@+id/btn_remove_user_profile_photo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
